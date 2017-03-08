@@ -102,20 +102,18 @@ planUrl:string='http://localhost:8082/PLAN_DESIGN/GET_ALL_PLANS?Key=VIEW&PartyId
         let CreateUserSubscrTrialUrl = 'http://localhost:8082/PLAN_DESIGN/CREATE_USER_SUBSCR';
         let sessionData = sessionStorage.getItem('admindetails');
         let partyId = JSON.parse(sessionData).adminPartyId;
-
         let dateValidFrom = new Date();
         let ddValidFrom = dateValidFrom.getDate();
         let mmValidFrom = dateValidFrom.getMonth() + 1;
         let yValidFrom = dateValidFrom.getFullYear();
-        let FormattedDateValidFrom = ddValidFrom + '-'+ mmValidFrom + '-'+ yValidFrom;
-
+        let FormattedDateValidFrom = ddValidFrom + '/'+ mmValidFrom + '/'+ yValidFrom;
         let numberOfDaysToAdd = 30;
         let dateValidTill = new Date();
         dateValidTill.setDate(dateValidTill.getDate() + numberOfDaysToAdd);
         let ddValidTill = dateValidTill.getDate();
         let mmValidTill = dateValidTill.getMonth() + 1;
         let yValidTill = dateValidTill.getFullYear();
-        let FormattedDateValidTill = ddValidTill + '-'+ mmValidTill + '-'+ yValidTill;
+        let FormattedDateValidTill = ddValidTill + '/'+ mmValidTill + '/'+ yValidTill;
 
         return this.http.post(CreateUserSubscrTrialUrl, JSON.stringify({
                                               
@@ -141,21 +139,17 @@ planUrl:string='http://localhost:8082/PLAN_DESIGN/GET_ALL_PLANS?Key=VIEW&PartyId
                                               ), new RequestOptions({ headers: headers })); 
 
     }
-
     createUserSubscrPaid(planNo:string,planName:string,subplanName:string): Observable<any> {
-
         let headers = new Headers({'Content-Type': 'application/json','sessionId': sessionStorage.getItem('sessionId')});
         // let CreateUserSubscrUrl = 'http://triserver:8082/PLAN_DESIGN/CREATE_USER_SUBSCR';
         let CreateUserSubscrPaidUrl = 'http://localhost:8082/PLAN_DESIGN/CREATE_USER_SUBSCR';
         let sessionData = sessionStorage.getItem('admindetails');
         let partyId = JSON.parse(sessionData).adminPartyId;
-
         let dateValidFrom = new Date();
         let ddValidFrom = dateValidFrom.getDate();
         let mmValidFrom = dateValidFrom.getMonth() + 1;
         let yValidFrom = dateValidFrom.getFullYear();
-        let FormattedDateValidFrom = ddValidFrom + '-'+ mmValidFrom + '-'+ yValidFrom;
-
+        let FormattedDateValidFrom = ddValidFrom + '/'+ mmValidFrom + '/'+ yValidFrom;
         let subPlanName = subplanName.charAt(0);
         let FormattedDateValidTill:any;
         if(subPlanName != "U"){
@@ -165,12 +159,10 @@ planUrl:string='http://localhost:8082/PLAN_DESIGN/GET_ALL_PLANS?Key=VIEW&PartyId
           let ddValidTill = dateValidTill.getDate();
           let mmValidTill = dateValidTill.getMonth() + 1;
           let yValidTill = dateValidTill.getFullYear();
-          FormattedDateValidTill = ddValidTill + '-'+ mmValidTill + '-'+ yValidTill;
+          FormattedDateValidTill = ddValidTill + '/'+ mmValidTill + '/'+ yValidTill;
         }else{
           FormattedDateValidTill = "UN_LIMITED";
         }
-        
-
         return this.http.post(CreateUserSubscrPaidUrl, JSON.stringify({
                                               
                                                     "name":"createUserSubscr",

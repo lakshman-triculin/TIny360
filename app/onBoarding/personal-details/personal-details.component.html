@@ -23,7 +23,7 @@
                         <div *ngIf="userForm.controls.firstname.hasError('invalidtext')">Allow characters</div>
                         <div *ngIf="userForm.controls.firstname.hasError('minlength')" style="position: relative; top:26.5%;">Firstname isn't long enough.</div>
                     </div> 
-                    <input type="text" [(ngModel)]="lastname"  formControlName="lastname" placeholder="Last Name" (keypress)="keyPress($event,textpattern)" style="position: absolute;top: 209px;left: 258px;width: 194px;"/>
+                    <input type="text" [(ngModel)]="lastname"  formControlName="lastname" placeholder="Last Name" (keypress)="keyPress($event,textpattern)" style="position: absolute;top: 203px;left: 258px;width: 194px;"/>
                     <div class='form-text error' *ngIf="userForm.controls.lastname.touched" style="    position: absolute;top: 248px;left: 258px;">
                         <div *ngIf="userForm.controls.lastname.hasError('required')" >Lastname is required.</div>
                         <div *ngIf="userForm.controls.lastname.hasError('invalidtext')">Allow characters</div>

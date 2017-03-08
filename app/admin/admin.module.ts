@@ -8,6 +8,9 @@ import { HolidaysModule } from './holidays/holidays.module';
 import { WorkshopsModule } from './workshops/workshops.module';
 import { SystemUsersModule } from './system-users/system-users.module';
 import { ReportsModule } from './reports/reports.module';
+import { OrderModule }    from './order/order.module';
+import { OrderlistModule }    from './orderlist/orderlist.module';
+import { ModifyorderModule}    from './modifyorder/modifyorder.module';
 
 import { GlobalSettingsModule } from './global-settings/global-settings.module';
 
@@ -41,6 +44,9 @@ import { SharedModule } from '../shared/shared.module';
     SystemUsersModule,
     GlobalSettingsModule,
     ReportsModule,
+    OrderModule,
+    OrderlistModule,
+    ModifyorderModule,
 
 
     OnBoardingModule ,

@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.orders_one{ background-color:#fff;}
+
+p{ font-family: 'Lato', sans-serif; font-size:16px; color:#666; text-align:justify; margin:0 0 0 0; font-weight:300;display: -webkit-inline-box;align-content:center}
+
+h1 a{ font-family: 'Lato', sans-serif;font-size: 25px;color: #666;text-align: justify;margin: 0 0 0 0;font-weight: 600;display: -webkit-inline-box; text-decoration: none; }
+
+h2{ border:1px solid #ccc; width:50px; height:25px; margin:0 0 0 0; }
+
+span select{ font-family: 'Lato', sans-serif;font-size: 16px;color: #666;text-align: justify;margin: 0 0 0 0;font-weight: 300;display:inline-block;width: 80%;height: 35px; border: 1px solid #ccc;border-radius: 3px;-moz-appearance: none;}
+
+.pad_z input[type="number"]{ font-family: 'Lato', sans-serif;font-size: 16px;text-align: justify;margin: 0 0 0 0;font-weight: 300;display: inline-block;width: 28%;height: 35px; border: 1px solid #ccc;border-radius: 3px;}
+
+.pad_z th{ width:12%;}
+
+.pad_z .one{ width:5%; }
+
+.pad_z .two{ width:9%;}
+
+.pad_z .three{ width:17%;}
+
+.pad_four{ width:10%;}
+
+.cost_one{ font-family:'Lato', sans-serif; font-size:16px; color:#666; text-align:justify;margin:0 0 0 0; font-weight:300; display:inline-block; cursor:pointer;}
+.pad_z{ padding:11px 0 0 0; height:18em;}
+.reset{ margin: 0 4px 0 0;}
+td{text-align: center;}
+th{text-align: center;}
+
+.pageWrap{ background-color:#ccc;}
+.notEdit{cursor: no-drop}
+.create_1{background-color: #fff;width: 83%;position: relative;left: 4%;}
+
+.edit{ border: none;outline: none;background-color: #18be8c;;color: #fff;font-size: 15px;width: 45px;font-weight: 400;
+text-align: center;height: 24px;line-height: 24px; }
+
+.Reset_1{border: none;outline: none;background-color: #21b2fe;color: #fff;font-size: 15px;width: 57px;font-weight: 400;
+text-align: center;height: 24px;line-height: 24px;}
+
+.cancel_1{border: none;outline: none;background-color:#18be8c;;color: #fff;font-size: 15px;width: 57px;font-weight: 400;
+text-align: center;height: 24px;line-height: 24px;}
+
+.arrow{ position: relative; right: 18%; top:0.111em;cursor:pointer;}
+
+#create_2{border: none;outline: none;background-color: #21b2fe;color: #fff;width: 105px;height: 27px;line-height: 27px;
+font-size: 13px;text-align: center;}
+
+h1{ font-family:'Lato', sans-serif; font-size: 14px; font-weight: 500; text-align: justify;color: #666; }
+

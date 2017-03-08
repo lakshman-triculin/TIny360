@@ -19,6 +19,9 @@ import { ClothSettingsComponent }    from './global-settings/cloth-settings/clot
 import { StoreSettingsComponent }    from './global-settings/store-settings/store-settings.component';
 import { GeneralSettingsComponent }    from './global-settings/general-settings/general-settings.component';
 import { CostCenterComponent }    from './global-settings/cost-center/cost-center.component';
+import { OrderComponent }    from './order/order.component';
+import { OrderlistComponent }    from './orderlist/orderlist.component';
+import { ModifyorderComponent }    from './modifyorder/modifyorder.component';
 
 
 import { ReportsComponent }    from './reports/reports.component';
@@ -88,6 +91,18 @@ const adminRoutes: Routes = [
            {
             path: 'reports',
             component: ReportsComponent,
+          },
+          {
+            path: 'orders',
+            component: OrderComponent,
+          },
+          {
+            path: 'orderlist',
+            component: OrderlistComponent,
+          },
+           {
+            path: 'modifyorder',
+            component: ModifyorderComponent,
           },
         ]
     //   }
