@@ -1,8 +1,7 @@
 import { FormGroup, FormArray, FormBuilder, Validators,FormControl } from '@angular/forms';
-import {  HttpService } from './services/http-service';
+
 // SINGLE FIELD VALIDATORS
 export function emailValidator(control: FormControl): {[key: string]: any} {
-  var httpService:HttpService;
   var email = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,4}))$/;
   if (control.value && !email.test(control.value)) {
     return { invalidemail: true };
@@ -47,6 +46,14 @@ export function matchingPasswords(passwordKey: string, confirmPasswordKey: strin
     }
   }
 } 
+//multi select validations
+export function multiselectValidator(control:FormControl): {[key:string]: any} {
+ if(control.value){
+ if (control.value.length>0 &&control.value.length>3  ) {
+ return { invalidmultiselectoptions: true };
+ }
+}
+}
 
 
 

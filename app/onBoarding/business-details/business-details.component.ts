@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, Validators,FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { emailValidator, matchingPasswords ,textValidator,numberValidator,urlValidator,addressValidator} from '../../shared/validator';
+import { emailValidator, matchingPasswords ,textValidator,numberValidator,urlValidator,addressValidator} from '../../shared/forms/validations/validator';
 
 // import { OnBoardingModule } from '../../onBoarding/onBoarding.module';
 

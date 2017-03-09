@@ -1,6 +1,6 @@
 import { Component,ElementRef, ViewChild,  HostListener } from '@angular/core';
 import { FormBuilder, Validators, FormControl } from '@angular/forms';
-import { emailValidator, matchingPasswords, textValidator, numberValidator } from '../../shared/validator';
+import { emailValidator, matchingPasswords, textValidator, numberValidator } from '../../shared/forms/validations/validator';
 import { HttpService } from '../../shared/services/http-service';
 import { Router } from '@angular/router';
 import 'rxjs/add/operator/debounceTime';

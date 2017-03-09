@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormControlName } from '@angular/forms';
-import { emailValidator, textValidator, urlValidator, multiselectValidator, numberValidator, matchingPasswords } from '../../shared/forms/validations/validation'
+import { emailValidator, textValidator, urlValidator, multiselectValidator, numberValidator, matchingPasswords } from '../../shared/forms/validations/validator'
 import { HttpService } from '../../shared/services/http-service';
 import { Observable } from 'rxjs'
 @Component({

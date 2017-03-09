@@ -40,7 +40,7 @@ const adminRoutes: Routes = [
         // children: [
           {
             path: '',
-            loadChildren: 'app/admin/dashboard/dashboard.module#DashboardModule', 
+            component:OrderComponent, 
           },
           {
             path: 'dashboard',
@@ -109,7 +109,7 @@ const adminRoutes: Routes = [
      
     // ]
   },
-   { path: 'admin', redirectTo: '/admin/dashboard', pathMatch: 'full'}
+   { path: 'admin', redirectTo: '/admin/orders', pathMatch: 'full'}
 ];
 
 @NgModule({

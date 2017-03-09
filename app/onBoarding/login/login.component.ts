@@ -3,7 +3,7 @@ import { FormBuilder, Validators,FormControl } from '@angular/forms';
 import { Router,NavigationExtras } from '@angular/router';
 import { AuthService } from '../../auth.service';
 import { AuthGuard } from '../../auth-guard.service';
-import { emailValidator} from '../../shared/validator';
+import { emailValidator} from '../../shared/forms/validations/validator';
 import { HttpService } from '../../shared/services/http-service';
 import * as CryptoJS from 'crypto-js';
 

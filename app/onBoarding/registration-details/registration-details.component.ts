@@ -1,6 +1,6 @@
 import { Directive,Component ,OnInit,ElementRef,HostListener  } from '@angular/core';
 import {FormGroup, FormBuilder, Validators,FormControl} from '@angular/forms';
-import { emailValidator, matchingPasswords ,textValidator,numberValidator,addressValidator,urlValidator} from '../../shared/validator';
+import { emailValidator, matchingPasswords ,textValidator,numberValidator,addressValidator,urlValidator} from '../../shared/forms/validations/validator';
 import { Router } from '@angular/router';
 import { HttpService } from '../../shared/services/http-service';
 import { Observable } from 'rxjs';

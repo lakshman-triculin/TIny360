@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormControlName } from '@angular/forms';
-import { emailValidator, textValidator, urlValidator, multiselectValidator, numberValidator, matchingPasswords } from '../../shared/forms/validations/validation'
+import { emailValidator, textValidator, urlValidator, multiselectValidator, numberValidator, matchingPasswords } from '../../shared/forms/validations/validator'
 import { HttpService } from '../../shared/services/http-service';
 
 import{Observable} from 'rxjs'
@@ -68,14 +68,7 @@ export class OrderComponent implements OnInit {
       }],
     }
 
-    this.keywords = [
-      { label: 'powerbank', value: 'powerbank' },
-      { label: 'charging', value: 'charging' },
-      { label: 'mobile', value: 'mobile' },
-      { label: '10000mah', value: '10000mah' },
-      { label: 'electronics', value: 'electronics' }, 
-      { label: 'battery', value: 'battery' },
-      { label: 'samsung', value: 'samsung' }];
+
     this.userForm = fb.group({
       category: ['', Validators.compose([Validators.required])],
       number: ['', Validators.compose([Validators.required])],
@@ -196,8 +189,6 @@ export class OrderComponent implements OnInit {
   display:boolean = false;
 popupdata:any;
    showDialog() {
-        
        this.display = true;
-
    }
 }
