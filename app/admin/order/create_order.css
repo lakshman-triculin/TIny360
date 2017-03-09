@@ -28,8 +28,6 @@ span select{ font-family: 'Lato', sans-serif;font-size: 16px;color: #666;text-al
 .reset{ margin: 0 4px 0 0;}
 td{text-align: center;}
 th{text-align: center;}
-
-.pageWrap{ background-color:#ccc;}
 .notEdit{cursor: no-drop}
 .create_1{background-color: #fff;width: 83%;position: relative;left: 4%;}
 

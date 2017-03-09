@@ -17,6 +17,7 @@ import { GlobalSettingsModule } from './global-settings/global-settings.module';
 
 import { PlanDetailsModule } from '../onBoarding/plan-details/plan-details.module';
 import { NavbarModule } from '../shared/navbar/navbar.module';
+import { ToolbarModule } from '../shared/toolbar/toolbar.module';
 
 import { AdminComponent} from './admin.component';
 import { AdminRoutingModule } from './admin-routing.module';
@@ -51,7 +52,9 @@ import { SharedModule } from '../shared/shared.module';
 
     OnBoardingModule ,
     PlanDetailsModule,
+    ToolbarModule,
     NavbarModule,
+   
     SharedModule
   ],
   declarations: [

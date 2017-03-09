@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './toolbar.component';
 
@@ -6,6 +6,10 @@ import { ToolbarComponent } from './toolbar.component';
   imports: [
     CommonModule
   ],
-  declarations: [ToolbarComponent]
+  declarations: [ToolbarComponent],
+   schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
+exports:[ToolbarComponent]
 })
 export class ToolbarModule { }

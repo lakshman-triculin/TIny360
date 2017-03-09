@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-
+ul, li, h1, h2, h3, h4, h5, h6, p {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
 
 
 .rupee_one{ width:4% !important;
@@ -128,7 +133,7 @@ clear{ clear:both;}
 
 .subplanname_two{ text-align: center;margin: -25% 0 0 10%;}
 
-.content input[type="radio"]{/*margin: 20% 0 0 41%;*/width: 30px;height: 22px; position:relative;top: 20px;left: 89px; }
+.content input[type="radio"]{/*margin: 20% 0 0 41%;*/width: 30px;height: 22px; position:relative;top: 20px;left: 63px; }
 
 .ModuleDetails{ width: 47vh;background: #ccc;height: auto;line-height: 30px;padding: 0 0 0 14%;border-bottom: 1px solid #ccc;    margin: -38px 0 0 75px;}
 
@@ -140,7 +145,7 @@ clear{ clear:both;}
 
 .ModuleDetails .rupee_three{ width:4% !important; margin:0 0 0 0;}
 
-.ModuleDetails .content_one{background-color: #4b92d1;margin: 2% 0 0 -15.5%;height: 12%;display: -webkit-box;padding: 8% 0 0 0;}
+.ModuleDetails .content_one{background-color: #4b92d1;margin: 3% 0 0 -12.5%;;height: 12%;display: -webkit-box;padding: 8% 0 0 0;}
 
 .ModuleDetails .parag_one{font-family: "Lato", sans-serif;font-size: 18px;margin: -1% 47% 0 22%;text-align: center;font-weight: 400;color: #fff;}
 

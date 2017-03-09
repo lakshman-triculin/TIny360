@@ -1,0 +1,29 @@
+.simpleList > ul .sub {
+    cursor: pointer;
+}
+.simpleList > ul > li {
+    border-bottom: 1px solid #dbdce2;
+}
+.simpleList > ul > li > a {
+    display: block;
+    font-weight: 700;
+    font-size: medium;
+    padding: 15px 18px 15px 15px;
+}
+a:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #ffa500;
+}
+ul, li, h1, h2, h3, h4, h5, h6, p {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.asideUserProfile {
+    position: relative;
+}
+.subroutelist{
+        margin: 0 0 0 43px;
+}

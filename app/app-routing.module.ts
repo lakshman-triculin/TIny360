@@ -7,7 +7,6 @@ import { AdminComponent } from './admin/admin.component';
 import { OnBoardingComponent } from './onBoarding/onBoarding.component';
 import { SharedComponent } from './shared/shared.component';  
 // import { NavbarComponent } from './shared/navbar/navbar.component';
-
 // import { BusinessDetailsComponent }  from './onBoarding/business-details/business-details.component';
 // import { PersonalDetailsComponent }  from './onBoarding/personal-details/personal-details.component';
 // import { RegistrationDetailsComponent }  from './onBoarding/registration-details/registration-details.component';

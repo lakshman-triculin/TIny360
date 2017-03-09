@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedComponent } from './shared.component';
 
 import { NavbarModule } from './navbar/navbar.module';
-
+import { ToolbarModule } from './toolbar/toolbar.module';
 import { AdminModule } from '../admin/admin.module';
 import {PaginationComponent, GlobalSearchComponent, HttpService, ResourceService, FiltersService, GlobalSearchPipe,
   SearchPipe, PaginationPipe}from'./index';
@@ -11,6 +11,7 @@ import {PaginationComponent, GlobalSearchComponent, HttpService, ResourceService
   imports: [
     CommonModule,
     NavbarModule,
+    
     // AdminModule
   ],
   declarations: [SharedComponent,PaginationComponent, GlobalSearchComponent, GlobalSearchPipe,

@@ -3113,17 +3113,22 @@
                 "subMenuList": []
             },
             {
-                "name": "Holidays",
-                "routerLink": "/admin/holidays",
+                "name": "Orders",
+                "routerLink": "/admin/orders",
                 "styleIcon": "zmdi zmdi-mood zmdi-hc-fw icon",
                 "subMenuList": [{
-                        "name": "Store Settings",
-                        "routerLink": "/admin/global-settings/store-settings",
+                        "name": "Orders",
+                        "routerLink": "/admin/orders",
                         "styleIcon": "zmdi zmdi-desktop-windows zmdi-hc-fw icon"
                     },
                     {
-                        "name": "General Settings",
-                        "routerLink": "/admin/global-settings/general-settings",
+                        "name": "OrderList",
+                        "routerLink": "/admin/orderlist",
+                        "styleIcon": "zmdi zmdi-desktop-windows zmdi-hc-fw icon"
+                    },
+                    {
+                        "name": "ModifyOrder",
+                        "routerLink": "/admin/modifyorder",
                         "styleIcon": "zmdi zmdi-desktop-windows zmdi-hc-fw icon"
                     }
                 ]

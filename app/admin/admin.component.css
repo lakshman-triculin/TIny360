@@ -1,0 +1,14 @@
+.aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    background: #fff;
+    min-height: 100%;
+    z-index: 3;
+    padding-top: 60px;
+}
+.pageWrap{
+position: absolute;
+left: 219px;
+}

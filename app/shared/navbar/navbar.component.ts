@@ -23,17 +23,17 @@ import {menuList} from './menuList';
 })
 
 export class NavbarComponent implements OnChanges {
-
   menuItems:menuList;
   menuindex:number=0;
   subindex:number=0;
   public selected:number=999;
 	public selectedSubMenu=999;
   sidebar1:string = 'block';
-
   constructor(public httpService: HttpService,private router: Router) 
   {   
-       this.httpService.getMasterConfig().subscribe(res =>{this.menuItems = res.menuList;});
+       this.httpService.getMasterConfig()
+       .subscribe(
+         res =>{this.menuItems = res.masterConfig.menuList;});
   }
 expandMenu(index:number) {
 	  (this.selected===index)?this.selected=999:this.selected=index;

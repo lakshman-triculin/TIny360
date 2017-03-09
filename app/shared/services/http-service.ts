@@ -39,7 +39,7 @@ planUrl:string='http://localhost:8082/PLAN_DESIGN/GET_ALL_PLANS?Key=VIEW&PartyId
   }
 
    public getMasterConfig(): Observable<any> {
-    return this.http.get(this.url)
+    return this.http.get('app/data.json')
       .map((responseData) => {
         return responseData.json();
       });
